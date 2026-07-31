@@ -1,48 +1,33 @@
 # 实习工作台
 
-凡岛大学人才发展实习生工作记录网页，包含三个模块：
+凡岛大学 · 人才发展实习生工作记录页。
 
-- **工作概览** — 月视图日历事件
-- **AI 实践** — Skill 卡片与 AI 赋能实践报告
-- **培训研习实录** — 培训课程笔记（手风琴 + 时间筛选）
+把实习期间的**工作日历、AI 实践与培训研习**收进一个可双击打开的静态网页，让成长过程看得见、翻得回来。
 
-仓库地址：https://github.com/Liyouyou0407/intern-dashboard
+> 2026.06 – 2026.07 · 成长可见，积累可循
 
-## 如何使用
+## 功能
 
-1. 下载本仓库中的 [`intern-dashboard.zip`](./intern-dashboard.zip)
-2. 解压压缩包
-3. 双击打开其中的 `intern-dashboard.html`
+- **工作概览** — 月历视图，按日沉淀会议、考核、过课与实操安排  
+- **AI 实践** — Skill 卡片与分领域 AI 赋能报告，沉淀可复用的落地经验  
+- **培训研习** — 课程实录手风琴 + 月份筛选，从入职培训到谈判、内控、Skill 大赛
 
-无需安装、无需联网，用浏览器即可打开。
+## 使用
 
-## 仓库内容
+本仓库为零依赖静态页，无需构建、无需后端：
 
-| 文件 | 说明 |
-|------|------|
-| `intern-dashboard.zip` | 最新完整项目压缩包（推荐下载） |
+1. 克隆或下载本仓库  
+2. 用浏览器打开 `intern-dashboard.html`
 
-解压后通常包含：
+## 技术说明
 
-- `intern-dashboard.html` — 单文件网页（结构 / 样式 / 数据 / 交互均内嵌）
-- `README.md` / `UPDATE.md` / `SKILL.md` — 使用与维护说明（若包内有）
+- 单文件：`intern-dashboard.html`（HTML / CSS / JS / 数据内嵌）  
+- 无 CDN、无外部字体、无网络请求  
+- 视觉参考字节跳动社招官网风格：白底、蓝渐变导航、细线卡片
 
-## 页面说明
+## 仓库结构
 
-纯静态单页，零外部依赖。所有数据写在 HTML 内的 JavaScript 变量中：
+intern-dashboard/ ├── intern-dashboard.html # 主页面 ├── README.md └── SKILL.md # 内容维护约定（可选阅读）
 
-| 数据 | 对应页面 |
-|------|----------|
-| `CALENDAR_DATA` | 工作概览（日历） |
-| `SKILLS_DATA` / `AI_REPORTS_DATA` | AI 实践 |
-| `TRAINING_DATA` | 培训研习实录 |
-
-## 以后如何更新
-
-1. 用最新的「工作日历概览.xls」「培训内容日志.docx」更新网页内容（只改数据，不改布局）
-2. 重新打包为 `intern-dashboard.zip`
-3. 上传覆盖本仓库中的压缩包即可
-
-## 作者
-
-李凤芸 · GitHub：[@Liyouyou0407](https://github.com/Liyouyou0407)
+## 许可
+仅供实习展示与个人存档使用。
