@@ -25,9 +25,5 @@
 - 无 CDN、无外部字体、无网络请求  
 - 视觉参考字节跳动社招官网风格：白底、蓝渐变导航、细线卡片
 
-## 仓库结构
-
-intern-dashboard/ ├── intern-dashboard.html # 主页面 ├── README.md └── SKILL.md # 内容维护约定（可选阅读）
-
 ## 许可
 仅供实习展示与个人存档使用。
